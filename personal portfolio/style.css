@@ -1,0 +1,205 @@
+:root{
+    --primary-border:5px solid #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(25, 27, 31);
+}
+.logo h1{
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    height: 40px; width: 40px;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute; top: 20px; left: 5%;
+}
+/*************************
+    Effect in background
+***************************/
+.effect-wrap .effect{
+    position: absolute;
+}
+.effect-1{
+    width: 30px;
+    height: 30px;
+    border: 4px solid #8a49ff;
+    right:7%; bottom: 10%;
+    animation: spin 10s linear infinite;
+}
+.effect-2{
+    left: 3%;
+    bottom: 15%;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: topbounce 3s ease-in-out infinite;
+}
+.effect-2 div{
+    height: 3px;
+    width: 3px;
+    background-color: rgb(245, 177, 51);
+    margin: 0 3px 8px;
+}
+.effect-3{
+    height: 180px;
+    width: 180px;
+    border: 20px solid rgb(206, 40, 150);
+    border-radius: 50%;
+    left: 40%;
+    top: -120px;
+    animation: leftbounce 3s ease-in-out infinite;
+}
+.effect-5{
+    height: 50px;width: 50px;
+    right: 25%; top: 15%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin2 10s linear infinite;
+}
+.effect-4{
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;    
+    left: 40%;
+    bottom: 30%;
+    animation: spin 10s linear infinite;
+}
+.effect-4:before{
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+}
+.effect-5 div{
+    width: 1px;
+    background-color: #4dd0e1;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}@keyframes spin2{
+    100%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes topbounce{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(25px);
+    }
+}
+@keyframes leftbounce{
+    0%,100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(30px);
+    }
+}
+/*---- side-bar menu ----*/
+.side-bar{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px); 
+    width: 300px;height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -400px;;
+    overflow-y: auto;
+    transition: 0.6s ease-out;
+    transition-property: right;
+    padding: 20px;
+}
+.side-bar.active{
+    right: 0;
+}
+/*---- menu item ----*/
+.side-bar .menu .iteam a{
+    text-decoration: none; 
+    font-size: 16px;
+    color: #fff;
+    display:block;
+    padding: 10px 30px;
+    margin: 20px;
+}
+.side-bar .menu .iteam a:hover{
+    color: #000000;
+    background-color: rgb(236, 239, 243);
+    transition: 0.5s ease;
+}
+
+.side-bar .menu .iteam i{
+    margin: 10px;
+}
+.close-btn{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}   
+nav .menu-btn{
+    float: right;
+    color: #fff;
+    font-size: 40px;
+    position: absolute; top: 20px; right: 5%;
+    cursor: pointer;
+}
+main{
+    position: absolute;
+    top: 30%; left:10%;  
+}
+.profile-pic img{
+    display: block;
+    position: absolute;
+    top: 20%; left: 50%;
+    width: 300px; height: 300px;
+    border-radius: 100%;
+}
+main section h2{
+    font-size: 55px;
+    font-weight: 700;
+    color: rgb(219, 207, 207);
+    margin-bottom: 10px;
+}
+main section h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(211, 207, 207, 0.89);  
+}
+.more a{
+    text-decoration: none;
+    position: absolute;
+    top: 60%; left: 20%;
+    font-size: 20px;
+    background-color: #fff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 25px;
+}
+.more a:hover{
+    background-color: #00000071;
+    color: #fff;
+}

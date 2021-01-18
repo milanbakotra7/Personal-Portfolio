@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Pesnol Portfolio Website</title>
+</head>
+
+<body>
+   
+    <nav>
+        <div class="logo">
+            <h1>M</h1>
+        </div>
+        <div class="menu-btn">
+           <abbr title="menu"><i class="fas fa-bars"></i></abbr>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <p >Hello</p>
+            <h2>I'm Milan Bakotra</h2>
+            <h1>Web Designer & Developer</h1> 
+        </section>
+    </main>
+    <div class="profile-pic">
+        <img src="image/m-logo2.jpg" alt="prifile-pic">
+    </div>
+    <div class="more">
+        <a href="#">More Aboute Me</a>
+    </div>
+    
+    <div class="side-bar">
+        <div class="close-btn">
+            <abbr title="close menu"><i class="fas fa-times"></i></abbr>
+        </div>
+        <div class="menu">
+            <div class="iteam"><a href="#"><i class="fas fa-desktop"></i>desktop</a></div>
+            <div class="iteam"><a href="#"><i class="fas fa-desktop"></i>desktop</a></div>
+            <div class="iteam"><a href="#"><i class="fas fa-desktop"></i>desktop</a></div>
+            <div class="iteam"><a href="#"><i class="fas fa-desktop"></i>desktop</a></div>
+            <div class="iteam"><a href="#"><i class="fas fa-desktop"></i>desktop</a></div>
+        </div>
+    </div>
+    <div class="effect-wrap">
+        <div class="effect effect-1"></div>
+        <div class="effect effect-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="effect effect-3"></div>
+        <div class="effect effect-4"></div>
+        <div class="effect effect-5"><div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div></div>
+    </div>
+
+</body>
+<script>
+
+    $('.menu-btn').click(function () {
+
+        /* side-bar menu expand */
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility", "hidden");
+        
+    });
+
+    $('.close-btn').click(function () {
+        /* menu collapse */
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible");
+        
+    });
+</script>
+
+</html>
